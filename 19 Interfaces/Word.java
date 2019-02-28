@@ -12,9 +12,9 @@ public class Word implements Comparable<Word>
   public int compareTo(Word other) 
   {
 
-     //must add code to complete 
+     int y = orig.compareTo(other.toString());
 
-     return 1; 
+     return y; 
   }
 
   public String toString() { return orig; }
