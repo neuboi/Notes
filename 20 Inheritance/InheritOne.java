@@ -14,12 +14,12 @@ class A
    
    public void setX(int val)
    {
-   	x=val;
+    x=val;
    }
    
    public int getX()
    {
-   	return x;
+    return x;
    }
    
    public String toString() 
@@ -37,17 +37,21 @@ public class InheritOne
 {
   public static void main ( String[] args )
   {
-		//test code in the main method
-		A one = new A();
+  //test code in the main method
+  A one = new A();
     B two = new B();
 
-		out.println(one);
-		one.setX(11);
-		out.println(one.getX());
+  out.println(one);
+  one.setX(11);
+  out.println(one.getX());
 
-		
-		out.println(two);    
-		two.setX(24);
-		out.println(two.getX());		
+  
+  out.println(two);    
+  two.setX(24);
+  out.println(two.getX()); 
+  
+  A three = new A();
+  System.out.println(one.equals(three));
+  
   }
 }
